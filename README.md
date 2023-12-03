@@ -9,7 +9,7 @@
 | **Mata Kuliah** | Bahasa Pemrograman |
 
 ## Latihan 1
-*Ubahlah kode dibawah ini menjadi fungsi menggunakan lambda
+* Ubahlah kode dibawah ini menjadi fungsi menggunakan lambda
 ```python
 import math
 
@@ -26,7 +26,7 @@ def d(s):
 return "".join(set(s))
 ```
 
-## Penjelasan
+# Penjelasan
 ## Pangkat
 ```python
 def a(x):
@@ -246,3 +246,6 @@ while True:
 ![1](Gambar/1.png)
 
 ### *Hasil hanya sebagin dari fungsi program*
+
+## Flowchart
+<img src="Flowchart/Flowchart.png">
