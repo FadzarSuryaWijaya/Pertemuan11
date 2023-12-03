@@ -8,7 +8,7 @@
 | **Kelas** | TI.23.A.5 |
 | **Mata Kuliah** | Bahasa Pemrograman |
 
-## Latihan
+## Latihan 1
 *Ubahlah kode dibawah ini menjadi fungsi menggunakan lambda
 ```python
 import math
