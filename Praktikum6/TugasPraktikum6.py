@@ -1,106 +1,8 @@
-# Pertemuan-11
-
-## Profil
-| Variable | Isi |
-| -------- | --- |
-| **Nama** | Fadzar Surya Wijaya |
-| **NIM** | 312310451 |
-| **Kelas** | TI.23.A.5 |
-| **Mata Kuliah** | Bahasa Pemrograman |
-
-## Latihan
-*Ubahlah kode dibawah ini menjadi fungsi menggunakan lambda
-```python
-import math
-
-def a(x):
-return x**2
-
-def b(x, y):
-return math.sqrt(x**2 + y**2)
-
-def c(*args):
-return sum(args)/len(args)
-
-def d(s):
-return "".join(set(s))
-```
-
-## Penjelasan
-## Pangkat
-```python
-def a(x):
-    return x**2
-print(f'hasil dari 2 pangkat 2 adalah {a(2)}')
-# Ubah Menjadi Lambda
-pangkat = lambda x : x**2
-print(f'hasil dari 2 pangkat 2 adalah {pangkat(2)}')
-```
-### OUTPUT
-<img src="Gambar/2.L.png">
-
-## Akar
-```python
-def b(x, y):
-    return math.sqrt(x**2 + y**2)
-print(f'hasilnya adalah {b(2,3)}')
-
-# Ubah Menjadi Lambda
-b = lambda x,y : math.sqrt(x**2 + y**2)
-print(f'hasilnya adalah {b(2,3)}')
-```
-### OUTPUT
-<img src="Gambar/3.L.png">
-
-## Pembagian menggunakan *args
-```python
-def c(*args):
-    return sum(args)/len(args)
-print(c(2,4,6,8,10)) 
-
-# Ubah Menjadi Lambda
-c = lambda *args: sum(args) / len(args)
-print(f'hasilnya adalah: {c(2, 4, 6, 8, 10)}')
-```
-### OUTPUT
-<img src="Gambar/4.L.png"><br>
-<h3>Ini karena fungsi lambda c menghitung rata-rata dari angka yang diberikan (2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = 6.0.</h3>
-
-## Fungsi set
-```python
-def d(s):
-    return "".join(set(s))
-print(d("hello"))
-
-# Ubah menjadi Lambda
-data = [1,2,3,4,5]
-d = lambda s: "".join(set(s))
-print(d("hello"))
-```
-### OUTPUT
-<img src="Gambar/5.L.png"><br>
-
-><h3>'set(s)': Mengubah string s menjadi himpunan (set), yang akan menghilangkan duplikat karakter.</h3>
-
-## OUTPUT
-<img src="Gambar/6.L.png">
-
-## Tugas Praktikum
-*Buat program sederhana dengan mengaplikasikan penggunaan fungsi
-yang akan menampilkan daftar nilai mahasiswa, dengan ketentuan:*
-- Fungsi tambah() untuk menambah data
-- Fungsi tapilkan() untuk menampilkan data
-- Fungsi hapus(nama) untuk menghapus data berdasarkan nama
-- Fungsi ubah(nama) untuk mengubah data berdasarkan nama
-- Buat flowchart dan penjelasan programnya pada README.md
-
-# Program 
-``` Python
 list = {}
 
 def garis():
     '''Fungsi garis'''
-    print("~"*80)
+    print("~"*78)
 
     # Menambahkan data inputan 
 def tambah():
@@ -182,7 +84,7 @@ print("="*20)
 while True: 
     print()
     menu = input("[(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar] : ")
-    print("~"*75)
+    garis()
     print()
 
     if menu.lower() == 't':
@@ -206,43 +108,3 @@ while True:
 
     else:
         print("\n INPUT {} TIDAK ADA!, Silakan pilih [T/U/H/C/L] untuk menjalankan program!".format(menu))
-```
-### Penjelasan
-Pada dasar ny program ini sama seperti di Pertemuan-10, bedanya di program ini di tambahkan `Function` / Sub rutin. 
-Seperti program ada di atas `def` yg berati definision, & contoh `def garis()` Untuk membuat fungsi garis yg di panggil dari `print("~"*80)`.
-
-Kalau `def tambah()`, `def ubah()`, `def hapus()`, `def cari()`, `def lihat()` di panggil dari program berikut :
-``` Python
-while True: 
-    print()
-    menu = input("[(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar] : ")
-    print("~"*75)
-    print()
-
-    if menu.lower() == 't':
-        tambah()
-
-    elif menu.lower() == 'u':
-        ubah()       
-
-    elif menu.lower() == "h":
-        hapus() 
-
-    elif menu.lower() == "c":
-        cari()
-
-    elif menu.lower() == "l":
-        lihat() 
-
-    elif menu.lower() == "k":
-        print("Program selesai, Terima Kasih :) ")
-        break
-
-    else:
-        print("\n INPUT {} TIDAK ADA!, Silakan pilih [T/U/H/C/L] untuk menjalankan program!".format(menu))
-```
-
-### Hasil Program 
-![1](Gambar/1.png)
-
-### *Hasil hanya sebagin dari fungsi program*
